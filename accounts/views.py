@@ -4,7 +4,7 @@ from .serializers import RegisterSerializer
 from rest_framework import status
 
 
-def RegisterView(APIView):
+class RegisterView(APIView):
 
     def post(self, request):
         try:
