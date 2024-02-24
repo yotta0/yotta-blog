@@ -30,7 +30,7 @@ class RegisterView(APIView):
                 status=status.HTTP_201_CREATED
             )
 
-        except Exception:
+        except Exception as e:
             return Response({
                 'data': None,
                 'message': 'Some error occurred',
